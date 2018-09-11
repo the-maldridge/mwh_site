@@ -3,6 +3,7 @@ layout: post
 title: Very Old Void System Updates
 date: 2017-09-24 18:00:00
 categories: Void XBPS Update
+aliases: [/void/xbps/update/2017/09/24/upgrading-the-ancient.html]
 ---
 
 I have a lot of computers in my collection from machines I've wanted

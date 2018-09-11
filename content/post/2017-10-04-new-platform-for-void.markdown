@@ -4,6 +4,7 @@ title: Bringing a new platform to Void
 date: 2017-10-04 22:00:00
 categories: void bootstrap linux
 author: maldridge
+aliases: [/void/bootstrap/linux/2017/10/04/new-platform-for-void.html]
 ---
 
 When you download an image for your Raspberry Pi or Beaglebone or

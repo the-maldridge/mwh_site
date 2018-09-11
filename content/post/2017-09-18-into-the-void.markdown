@@ -3,6 +3,7 @@ layout: post
 title: Into The Void
 date: 2017-09-18 22:00:00
 categories: Void Linux Culture
+aliases: [/void/linux/culture/2017/09/18/into-the-void.html]
 ---
 
 Into the Void.  It sounds quite dramatic doesn't it?  These are the
