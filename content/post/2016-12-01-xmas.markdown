@@ -1,0 +1,42 @@
+---
+layout: post
+title: Christmas!
+date: 2016-12-01 00:00:00
+categories: life
+---
+
+Its the start of December.  I'm pretty much finished with finals and
+projects for this semester.  Because of the stuff for the next
+semester this largely represents the end of my undergraduate career.
+Its been a long time gettings here and I wouldn't be here without the
+help of many people.
+
+Looking back at this semester has had some incredible things:
+
+In September the LUG started up in earnest and I worked to get the
+office up and running as a functional space.  There are rumors we may
+lose that space but until these are confirmed its going to be a
+functional office.
+
+There was the Council sponsored CV trip to the State Fair of Texas.
+This was amazing and I couldn't have been happier.  It was a joint
+effort between myself, The excellent speaker Andrew S. and my good
+friend Gino O.  We orchestrated the transit, tickets, and events
+through the day and only managed to lose one freshmen!  Okay, not
+really lose but they headed back without telling anyone...
+
+The Halloween festival was amazing, Hailey outdid herself on so many
+levels.  There was even a Clue game where attendees had to figure out
+who killed Joe by finding clues in the lounge.  People also enjoyed my
+'fat chef' costume and seeing me out of my normally gruf SysAdmin
+personality for a few hours.  I think sometimes people think that is
+my exclusive mode.
+
+And so here I sit.  Its the start of December and as usual I'm in an
+empty lounge.  I sometimes wonder if after I leave if there will be
+anyone else sitting here late at night; I think not.  Its been an
+amazing semester and I've had a great time with my friends.  The
+seniors have a dynamic that I don't think the underclassmen have or
+share with us, but that's okay.  One last time I'll be here shutting
+things down for the Winter rebuild, though with Void it will be only
+about a 30 minute process.

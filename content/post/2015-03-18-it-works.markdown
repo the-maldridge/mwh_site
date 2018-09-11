@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "It Works!"
+date:   2015-03-18 00:44:16
+categories: General
+---
+This site is a dramatic improvement over the apache webserver's default page.
+
+I obviously do not have a large amount of content yet, but as time goes on I will add to this site accordingly.

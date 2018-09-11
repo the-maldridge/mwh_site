@@ -1,0 +1,137 @@
+---
+layout: post
+title: Achievement Get! College Degree
+date: 2017-05-30 00:00:00
+categories: UTD CV
+---
+
+Finally I'm done.  I have my degree, I've finished my educational
+track, and in a few short weeks I'll be moving to Mountain View,
+California to start my career as an SRE at Google.
+
+I couldn't have gotten here without some incredible people, I'd like
+to list them below.  Without your incredible help, I would never have
+finished, these people are listed in chronological order and with
+qualifications to the best of my memory.  If you have a title and I
+have incorrectly listed you here, please do not hesitate to reach out
+to me.
+
+This list is not exhaustive, please don't be offended if I haven't
+mentioned you below.  These are the people that leaped into my head as
+I was writing this.  I'm also not confident in the spelling of all of
+these names.  For some of these people its been a long time.
+
+The Early Days:
+
+  * Ms. Jolie - Thank you for pushing me to learn more and keep moving
+    forwards, even when it wasn't obvious why I should care!
+  * Ms. Greenwood - Your dedication  to your students is an example to
+    all,  I  was inspired  to  push  my  own  boundaries and  grow  my
+    knowledge and skills, something I still strive to do today.
+
+A little later:
+
+  * Ms. Haddock - One of the only instructors I have had who is more
+    stubborn than me.  Thank you, your insistence that I participate
+    in programs beyond the regular school day pushed me to become a
+    better student and actually learn how to study.
+  * Ms. Clingan - Accepting an 8th grader to Algebra II was not how I
+    think you expected to start the year, but I appreciate your
+    patience.
+  * Prof. Rhea - I struggled through your class and learned what it
+    was to study.  This is perhaps one of the single most important
+    things I learned.  Thank you.
+
+Ugh, High School:
+
+  * Ms. Rice - Though the normal progression isn't to jump from
+    Pre-Calculus to University Calculus, I appreciate the time you
+    spent helping me to get a solid foundation and then sharing in my
+    interest of computers.
+  * Dr. Hargrove - Though we may have disagreed about the age required
+    to take your course, it remains today one of the best math courses
+    I have ever taken.  Your proof based technique inspired me to
+    learn why things work the way they do and not just Google the
+    equations I need.
+  * Mr. Berry - I was no good at art when I started your class and I'm
+    not that much better now, but your way of making sure that
+    everyone felt good about their work was amazing.  I learned that
+    its always okay to turn out something that isn't perfect if you're
+    trying.  Once you have something it can be improved, but until you
+    make something there is nothing to improve upon.
+  * Mr. Davis - Though I was seething with rage when I was called to
+    sit at the front table, you spent the time it took for me to
+    succeed.  Yours was without doubt the single hardest class in my
+    High School career, but I also think I learned the most from it.
+    It will be a sad day when you finally retire and LASA will lose
+    something great, I'm glad I got a chance to study from you.
+  * Mr. Bertucci - Your reputation preceded you even before I made it
+    to Texas.  Thank you for your kindness and support to a student
+    starting at a new school.  I am still in awe of your skill as a
+    craftsman in the shop, and I think one of the most important
+    things I learned from you is that its okay to be marginal at
+    something.  We all have our specializations and it takes all kinds
+    of people for a project to succeed.
+
+University:
+
+  * Dr. Stone - Your arts course took me far outside of my comfort
+    zone and skill, it required me to put forward a lot of effort to
+    learn and grow.  I was amazed to learn more about the world around
+    me and see it in a different way and I would take the class again
+    in an instant.
+  * Prof. Cole - My friends and I knew we wanted to have a Hackathon
+    and we had no idea how to do it.  Thank you for taking the time to
+    walk us through the basics of Software Engineering to help us get
+    started and on the right track.  The skills you passed on at
+    random meetings are invaluable and students who do not come to
+    your office hours are missing out on a lot.
+  * Prof. Smith - Your reputation preceded you in terms I will not
+    repeat.  That being said your course challenged me to actually
+    learn rather than coast through it.  I enjoyed it greatly and even
+    though I tended to not agree with your TAs, I still think it is
+    one of the courses I have learned the most in.
+  * Dr. Harpham - I know its always taking a chance on asking a
+    student to assist with managing part of an official University
+    program.  Thank you for taking the chance on me, I'd like to think
+    things turned out alright.
+  * Ms. Kelly - College is stressful and trying at times.  Thank you
+    for always having an open office door when thins weren't all
+    sunshine and rainbows.
+  * Ms. Brunell - I don't know how you do it, but you manage to keep
+    track of all of the stuff I was handling and more.  Thank you so
+    much for pre-emptively solving problems and always having my back
+    with the managerial tasks I had no idea what to do with!
+  * Dr. Straach - I cannot say how thankful I am for your support over
+    4 long years.  I am not sure I would have stayed to finish my
+    degree had I not had the opportunity to talk to you and hear why
+    it was important from someone who wasn't my own family.
+  * Dr. Nguyen - While your classes were incredibly challenging and at
+    times frustrating, the LUG gave me an opportunity to share my love
+    of Linux with the world.  Thank you for sharing in that interest.
+  * Dr. Sarac - TexSAW was a blast and it wouldn't happen without your
+    dedication.  I also appreciate that you were willing to take a
+    chance on Nick and I to build the tooling to improve things
+    further.
+
+Throughout:
+
+  * Dr. Chen - I still remember the story my Mom told me of you
+    showing up in her office in the back of the Sarkeys Theatre in
+    August 2001 to answer her general posting of finding a student to
+    help me learn about the world of physics and science in general.
+    Your dedication to helping me learn and become a better student
+    made a lasting impact throughout my academic career.  I am sure
+    that many of the instructors I have mentioned above owe you a
+    thanks for knocking my ego down a few levels and encouraging me to
+    learn the art of humility.  I am immensely grateful for the
+    projects you helped me find and the time you made available for me
+    to work in the Planetarium.  Your class remains one of my
+    favorites and I still remember all of the episodes of "The
+    Mechanical Universe".
+  * Dr. Aldridge - Both as mom and professor you have been an amazing
+    resource.  When skies were gray you were there for me and you were
+    always willing to take part in celebrating my successes, even if
+    they were incomprehensible.  I'm sure over the years there will be
+    many more blinking lights for you to look at, thank you for
+    getting me started!

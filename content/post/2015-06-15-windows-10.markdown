@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Windows 10"
+date:   2015-06-15 04:00:16
+categories: General
+---
+I am a staunch supporter of Linux and open source software.  Why then, would I run an MS Windows system, much less a system on the bleeding edge?
+
+Why?
+----
+
+A year ago I was working for UTD Residential Life in the capacity of an RA.  Like many departments that have a high dependence on technology, they used Microsoft Office for forms regardless of if that was the best solution available.  As a result, I found that when I turned in reports they were often malformed or improperly formated due to LibreOffice 3.5 deficiencies (4.0 corrects most if not all of these issues).
+
+To solve this issue I started looking for a cheap Windows computer that was capable of running MS Office and Firefox.  I didn't care about performance, I didn't care about obsolescence.  It just needed to be cheap and I needed it fast.
+
+To that end I found the Asus Transformer T100TA.  When I say found, I asked my friends who had Windows computers what they had and what could I get for cheap.  The T100 was the suggestion that most people came up with.  Its a small tablet-with-a-keyboard type of laptop built on the Intel Bay Trail architecture.  With 2GB of RAM and Intel Integrated HD Graphics I had no delusions of the system running high performance programs or games of any kind, but that wasn't what I bought the machine to do.
+
+For a year I used the machine more or less as an appliance that I could type documents on, dutifully clicking on the "Reboot Now" buttons when they popped up for updates and updating firmware when Asus released updates.  The machine served me very well and even surprised me on several occasions by running programs I would consider graphically intensive such as Minecraft.  A few weeks ago, I got a notice that I could upgrade to Windows 10 when it came out.
+
+Throwing common sense to the wind, I looked at the technical preview which allows you to install a development build of Windows without having to wait for the full release.  This does of course mean that there are bugs, glitches, and half baked system software.  Knowing this, I still chose to move ahead and see how the system worked.  As a result I now have a system that I think works, but still exhibits behavior of a system that has low level instability.  These are the bits I've noticed through the install and initial setup.
+
+Install
+-------
+
+I chose to do a clean install, formatting the disk and installing Windows from scratch.  This was easier said then done.  The first install completed without too many issues and then quickly deteriorated from there.  The Out Of Box Experience (OOBE) that sets up the initial user promptly crashed after spinning for a while and failed to provision a user.  The system then did a rough restart before coming up to a login prompt for "defaultuser0."  This is apparently a common issue, but now I had to figure out how to re-install without an OS on the machine.
+
+The T100 is special in that it uses a fully UEFI system.  Not only is it fully UEFI, but for reasons known only to Intel, its a 64-bit processor that is only capable of running a 32-bit bootloader.  Lots of googling then found me the magic key I was looking for.  Pressing and holding F2 during boot would cause the T100 to load into the firmware level UEFI environment where I could change the boot ordering to a flash drive.
+
+The second time through the install it seemed to actually complete and I was left with a system that had my user account on it, but bound to my Microsoft account.  This was a mistake.  For security reasons I use a non-memorable password since I never need to log into my Microsoft account where I don't have access to LastPass.  If you bind your local system account to a Microsoft account you can only log in with your Microsoft account.  After pulling up my password on another computer and logging in, I split my account from my online account so that I once again had a classic local login.  This has worked well.
+
+Initial Use
+-----------
+
+As with any Windows system, the first step was to install drivers and load the various system hardware profiles.  This was the part that I always dread where I spend hours chasing drivers.  Like many other sites, Asus hasn't put a lot of thought into how to pull together all the drivers for their hardware, but then again, not many manufacturers have.  As an aside, Dell is the only one I have found, and even then only by providing drivers in the Microsoft CAB file format, which is difficult to use on non-enterprise versions of Windows.  Looking at the available drivers, I picked the Intel SoC driver package as processor drivers are generally safe places to start with.  Of course, processors don't really need drivers to function, but the ancillary devices do and that's what I was hoping to resolve.
+
+I was shocked then when after installing the drivers, Device Manager reported no unknown hardware.  I'm still not convinced that it actually installed drivers for everything, but everything seems to be working.  In the little bit of time that I've played with it, I haven't noticed any substantial issues beyond connecting to my home wireless network.  Given that I am running 802.1X on my home network without proper SSL certificates, I'm willing to accept that that is a bit buggy and might need some extra work to function.
+
+Of installed software I loaded after the install was the new web browser that replaces the aging Internet Explorer, Microsoft Edge.  While the browser was indeed fast, it was far from production ready and showed many rough edges.  Examples include not being able to change the search provider from Bing, and that changing the home page, or anything else in the settings pain, wouldn't save reliably.  Hopefully these issues will be ironed out by launch.
+
+
+Final Thoughts
+--------------
+
+My initial opinion is that Windows 10 is not in any way production ready and it would be foolish to attempt to make the July 29th ship date for general availability.  I would consider the install I performed to be under optimal circumstances with a formatted disk and no attempt to upgrade or retain previous system components.  This simple case was not handled correctly, and then a re-install was required.  After that, the system still doesn't feel quite stable.  I can't put my finger on it, but something doesn't feel right about the new system environment.
+
+That's all that I've found thus far but as I go, I may post additional updates as I notice quirks or other issues.

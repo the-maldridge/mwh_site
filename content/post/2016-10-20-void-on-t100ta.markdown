@@ -1,0 +1,19 @@
+---
+layout: post
+title: Void Linux on T100TA
+date: 2016-10-20 00:00:00
+categories: Void Linux
+---
+
+As I imagined getting Void into the T100TA would not be easy.  It
+required custom install media and lots of fuss to get it to boot and
+then even more to install.  Right now this just isn't ready for prime
+time, the wifi doesn't even work!
+
+---
+
+Update January 2017: Wifi works out of the box now
+
+Update March 2017: Void supports hybrid boot, its possible to run x64 kernels now
+
+Update September 2017: Standard Void media can be used to install now
