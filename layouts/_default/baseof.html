@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "head.html" }}
+    <body>
+        <canvas id="matrix-rain" height="100%" width="100%"></canvas>
+        <div id="pageConstraint">
+            {{ partial "header.html" }}
+            <div id="content">
+                {{ block "main" . }}
+                {{ end }}
+            </div>
+            {{ partial "footer.html" }}
+        </div>
+    </body>
+    <script type="text/javascript" src="/js/matrix.js"></script>
+</html>

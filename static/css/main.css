@@ -1,0 +1,160 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #000000;
+    overflow-x: hidden;
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    z-index: -1;
+}
+
+article {
+    padding: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    font-size: large;
+}
+
+h4 {
+    font-size: small;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+#header nav {
+    text-align: center;
+    width: 100%;
+    border-top: 2px solid #6E6E6E;
+    border-bottom: 2px solid #6E6E6E;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    margin-bottom: 1em;
+}
+
+nav a {
+    text-align: center;
+    font-weight: bold;
+    margin-left: 4px;
+    margin-right: 4px;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+    color: #BDBDBD;
+}
+
+a:active {
+    color: #007500;
+}
+
+footer p {
+    text-align: center;
+    font-size: small;
+    border-top: 2px solid #6E6E6E;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    margin: 0;
+}
+
+#header {
+    width: 100%;
+    text-align: center;
+}
+
+#headerText {
+    color: #BDBDBD;
+    font-size: 4em;
+    font-family: 'Play', sans-serif;
+}
+
+#content {
+    margin:0;
+    padding:0;
+}
+
+#pageConstraint {
+    background: #151515;
+    color: #BDBDBD;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border: 2px solid #6E6E6E;
+    border-radius: 8px;
+
+}
+
+.postLink {
+    text-decoration: none;
+}
+
+.postBox {
+    background: #252525;
+    border: 2px solid #6E6E6E;
+    border-radius: 8px;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+.contentMeta {
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
+.page-item {
+    border: 1px solid #6E6E6E;
+    border-radius: 0.25em;
+    padding: 0.3em;
+    margin: 0.2em;
+}
+
+.page-link {
+    text-decoration: none;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+}
+
+.page-item.active {
+    background-color: #007500;
+}
+
+.page-item.disabled {
+    display: none;
+}

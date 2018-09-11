@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ $paginator := .Paginate (where .Data.Pages "Section" "!=" "") }}
+{{ range $paginator.Pages }}
+<div class="postBox">
+    <a href="{{ .URL }}" class="postLink"><h2>{{ .Title }}</h2></a>
+    <p>{{ .Summary }}</p>
+    {{ if .Truncated }}<a href="{{ .URL }}" class="postLink"><h4>Read More...</h4></a>{{ end }}
+</div>
+{{ end }}
+{{ template "_internal/pagination.html" . }}
+{{ end }}
