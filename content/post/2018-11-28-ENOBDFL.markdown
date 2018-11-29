@@ -1,0 +1,395 @@
+---
+title: "ENOBDFL"
+date: 2018-11-28T15:51:27-08:00
+---
+
+As anyone who's spent more than 10 minutes around me knows, I'm
+fascinated by software and by the development and management of the
+infrastructure that surrounds it.  While I'm usually more interested
+in the machinery and software that surrounds projects I work on, the
+human machinery is also fascinating, especially when it breaks down.
+
+When I joined the Void project I started out managing the Kansas City
+mirror, and configuring it with Ansible and other tools.  This
+eventually turned into managing the entire fleet and being accepted in
+the "inner circle" of senior maintainers and project leads.
+
+Those who don't know of my involvement but know of Void probably know
+of it for one of two reasons.  The first is that it has become (to the
+chagrin of the team that builds it) as a system without systemd.  The
+second, and perhaps more tabloid friendly notoriety is that its one of
+few large scale software projects in the FOSS world that's gone
+through an unplanned transfer of leadership and survived.  This post
+is about that transfer of leadership and what happened surrounding it.
+
+## Trouble Brewing
+
+In late 2015, people who were well involved in the project could tell
+things were wrong.  The Benevolent Dictator For Life (BDFL) Xtraeme
+wasn't involved as much as usual.  Some of us chalked this up to it
+being the end of the year, some of us chalked it up to stress and
+temporary burnout as he was maintaining an impossible pace with the
+number of packages under his care.  Whatever the ultimate reason, its
+not important here, and it would be rude to pry into his personal life
+anyway.
+
+The practical result of all of this is that by the end of 2015, the
+project was coasting without the formal head of development.
+
+## Detour through Politics
+
+Lets take a quick detour into 2 other projects and see how they're
+managed, then compare this to Void.  We'll look at Debian and Gitea.
+
+Debian is legendary in its complexity of organizational progress.
+Between Debian Maintainer, Debian Developers, Sponsors, members of the
+General Assembly, Technical Committee, and the foundation, Debian has
+perhaps more bureaucratic machinery than some US states and perhaps
+even some European nations.  All of this managerial infrastructure and
+distribution means that its virtually impossible for Debian to ever
+suffer a discontinuity in leadership, since someone will always be
+available.  Unfortunately, it also means that like state governments
+and most members of the EU, its very difficult to get anything done
+quickly.  Worse, the complexity can lead to distrust in the leadership
+when things happen in uncommon ways or the system appears to not honor
+a majority will, such as the trouble around the switch to systemd and
+the struggle for decision making power between the technical committee
+and the general assembly.  Debian's managerial machinery is also not
+cheap, there are entire sub teams dedicated to managing the
+infrastructure surrounding these human processes and the
+infrastructure is in many cases substantial.
+
+At the other end of the scale is perhaps a project like Gitea, which
+has a triumvirate that rotates every year.  The members of the
+triumvirate are chosen from among the community and simply own the
+GitHub organization.  This ideally resolves any scenario where control
+is lost, and also helps to prevent burnout, since there's an always
+present escape path at the end of the year for maintainers that are
+overwhelmed.  There's very little organizational machinery needed to
+surround this process, and there's very little cost associated with
+it, unfortunately rotating out lead members doesn't do well for
+project continuity in the long term when working on massive projects.
+
+Void uses yet another system, so lets look at the original mechanism
+that Void works with, and how it works now.  At first, Void was a very
+small project, and so had the equivalently small leadership structure.
+The GitHub organization was simply bound to Xtraeme's personal
+account, and he added collaborators as necessary to spread the load of
+reviewing and merging packages.
+
+Unfortunately, this meant that if he became unavailable for any reason
+for any period of time, the resources of the project could not easily
+be modified.
+
+Reading this article of course you know that Xtraeme did become
+unavailable for an extended period of time, and eventually stopped
+returning messages to the remaining team.  This brings us to...
+
+## ENOBDFL
+
+The benevolent dictator for life model has one fatal flaw, and its
+when the benevolent dictator no longer dictates.  So when Xtraeme
+stopped dictating, some interesting things happened.  The first was:
+nothing.
+
+Nothing happened, business continued as usual.  Packages were updated,
+builds continued, and the state of the art of Void continued to
+advance and develop.  It probably took 6 months before problems
+actually started to appear, and these didn't manifest in the way that
+the rest of the contributors expected.
+
+Void got popular.
+
+This was a blessing and a curse.  Suddenly we had more people that
+wanted to mirror us, people that wanted to send software and
+contribute fixes, and people that just wanted us to be bigger.  Of
+these things, the third is perhaps the most frustrating to the Void
+team, as its not a goal of the project.
+
+This popularity continued for a while and processes started to become
+strained.  Two Void maintainers burned out and left the project, at
+the same time, a German Linux magazine wanted to do a rather length
+article on Void.  To ensure the best article possible for them, we
+really wanted to spin new ISO images that they could test with all the
+latest and greatest software.  At this point the previous image set
+was well over a year old.
+
+## What Happens Now?
+
+At first, several maintainers reached out to Xtraeme and asked if he
+was leaving the project.  We were told with confidence that he would
+return in 2 month's time.  Well 2 months came and went, and he hadn't
+returned, so we asked again.  Again we were told 2 months.  This cycle
+repeated several times and as the date drew nearer to when the
+magazine wanted to look at Void, a decision had to be made.  New
+images were created and signed with a different key.  This was the
+first break of trust between the old processes of Void and the new
+processes, and it led to a lot of discussion behind closed doors.
+
+Why behind closed doors?  Well we truly believed this was going to be
+a temporary problem, and we would be able to continue with business as
+usual when Xtraeme returned, and we believed he would return.  It was
+a baffling concept to us that he would leave the project.  We believed
+it was in everyone's best interests to not discuss things publicly
+until we knew facts that could be presented, rather than piecemeal
+guesses at what was happening.
+
+### The Power Struggle
+
+Internally, there wasn't a power struggle, there was a struggle from
+power.  We had previously enjoyed that our own spheres of influence
+were fairly limited, and that there wasn't a need to make large policy
+decisions on a day to day basis.  Unfortunately without a BDFL, we now
+needed to make these decisions.
+
+After some discussion, it was decided that we'd deal with problems as
+they came up, and it wasn't worth us worrying about things before they
+happened.  We did, however, decide it was worth worrying about the
+future of the project if we couldn't get Xtraeme back onboard.
+
+### No one at the wheel
+
+Of course, while all this has been happening, there's some things that
+couldn't be changed or updated.  One that was about to become critical
+was ability to add new maintainers.
+
+It was around the time that we'd concluded Xtraeme wasn't coming back
+any time soon and we'd have to keep the project running that `maxice8`
+showed up.  This prolific maintainer started sending a huge number of
+PRs for updates and new packages, so many so that we questioned
+whether or not the nick was a real person, or a front for a
+development group.  When it turned out that it was just a very very
+efficient individual, we wanted to bring them onboard as a maintainer
+with commit privileges to the main tree.  This was also heavily
+influenced by `maxice8`'s work consuming a full maintainer to get it
+all merged.
+
+At the same time as the onslaught of PRs and updates, the DKIM keys
+for the forum's mail address started to have unrecoverable problems.
+This led to no one being able to reset passwords or sign up for
+several weeks.  This problems was eventually solved by routing email
+through a different domain that we had control of.
+
+## Why Bother?
+
+Its at this point that you might ask why we were bothering.  Void
+isn't nearly as popular as some of the other distros out there, and we
+were pouring in increasingly large amounts of work to fix it, so why
+do this?
+
+For many of the maintainers, we considered this to be the right thing
+to do.  As far as we were concerned, there were end users who had
+installed Void on computers with the expectation that it would work
+and function as advertised, and that it would continue to do so.
+
+This led to a series of internal arguments over whether or not this
+was the right thing to do, or if it was even legal.  We concluded that
+this was another argument that we'd have if it ever actually became a
+problem, and one developer decided to take leave of the project due to
+insolvable differences of opinion in this area.
+
+We procured the resources to, and maintain the capability to fork if
+necessary, brand and completely shut off Void.  Since the software
+is Open Source and freely licensed, a name change would be about the
+worst that would happen, but the ideals of Void would live on and
+systems could be transparently migrated to a new name and new
+repositories.  Fortunately it hasn't come to this yet.
+
+## Taking Control
+
+Given that we'd chosen to maintain the distribution as well as we were
+able, and to maintain the quality of service that our users had come
+to expect, some difficult choices had to be made.  Most of these
+revolved around infrastructure and project "ownership" but some
+changes to the way Void operates as a project also came about.
+
+### What's in a (domain) name?
+
+Once of the easiest resources we tried to track down was the domain
+name, but not `voidlinux.eu`.  While this is the address the project
+launched under, its more traditional for projects to reside under a
+`.org` address, and we really wanted to be under `voidlinux.org`.
+Fortunately someone had bought this name and new of the project, and
+had just been waiting for a contact to arrange the transfer.  We
+explained what was going on, and asked them to keep this matter quiet
+until we could do a coordinated release of information, as we weren't
+even sure it was possible to regain operational control of the
+project.
+
+### Systems, Servers, and Mirrors
+
+Though a headache at times, it turns out that the disjoint ownership
+of all the servers was one of the best things that could have happened
+here.  Since Void's servers are all paid for and owned by different
+people, there wasn't an awkward conversation of why bills hadn't been
+paid at a colo.  People were contacted individually, read into the
+situation, and agreement was sought on continuing to provide machines
+for the project, even under new leadership.
+
+Only one machine needed to be migrated during all of this, and then
+only due to a failed disk.
+
+### Source Control, or the headache of GitHub
+
+Easily the worst part of gaining control of the project was the Git
+repositories.  Void, like many other open source projects hosts code
+on GitHub as its a convenient platform which most people have an
+account on already.  Incidentally its perhaps one of the least
+friendly platforms to massive projects in terms of tooling, but there
+really aren't a lot of good options available for very large projects
+short of tools like Gerrit.
+
+We reached out to GitHub initially and got what amounted to a form
+letter back that the situation was unfortunate, but that GitHub would
+not be assisting us.
+
+After things became more serious and we had committed to getting
+control of the resources, we reached out again to GitHub, and again
+asked for assistance.  Again we got a form letter that they would
+provide no assistance.
+
+It is the author's opinion that GitHub actually has no real strategy
+or plan for interacting with the projects they host, and that they
+have no plan for continuity when they are as the service provider
+asked to take actions only a service provider can take.  This is
+incredibly frustrating, and led to a massive loss of trust from Void
+leadership in the reliability and long-term viability of GitHub as a
+platform host.
+
+For a long time there was discussion of if Void should leave GitHub
+and go to another platform such as GitLab, or if we should even host
+our own repo.  We reached out to GitLab they enthusiastically agreed
+to host us, but we couldn't get feature parity on their platform.
+
+Void is able to maintain 10k+ packages by making use of a large amount
+of automation.  This automation runs in Travis CI and consumes an
+unbelievable amount of compute time per month.  Making matters worse,
+we run on top of legacy travis, which runs on top of Google Compute
+Engine with full VMs (incidentally this is why CI runs take so long,
+cores have to become available in a Google cloud cluster before the CI
+job can schedule).  Void's workloads can't be containerized easily as
+that encounters the container-in-containers problem, which is still
+not solved in a way that doesn't introduce security concerns.
+
+So we were stuck with GitHub and no way to get control of our
+organization.  As we later would discover, they wanted to see some
+documentation from a legal entity that this transfer needed to happen,
+i.e. some reason that Xtraeme wouldn't be coming back.  Its left as an
+excessive to the reader for how this would have worked out to get a
+Spanish legal entity to confirm to a San Francisco company the status
+of an EU citizen while the San Francisco company was being acquired by
+a Delaware cooperation that's been sued a few times by the EU.
+
+We made the difficult choice to create a new organization with a dash
+between "Void" and "Linux" and pushed new copies of our repositories
+here.
+
+This is when we discovered the second problem in GitHub's
+infrastructure.  There is no way to update the fork graph or to send a
+pull request to a non-parent of a fork.  This requires you to maintain
+a fork of every repository you might wish to send a patch to, and
+meant that for Void maintainers we all needed to archive and re-fork
+our repositories.  Again the author believes this kind of obvious
+technical limitation to be evidence of GitHub's lack of plan around
+hosting FOSS projects.
+
+This led to some interesting problems.  The void-packages repository
+is massive.  Its not quite Linux Kernel massive, but its not the kind
+of thing you want to move and copy around very often.  At the time of
+this writing there are 91,881 commits in the void-packages repository.
+This is decidedly larger than the size of repository that GitHub
+optimizes for.  Most notably, we believe there's a race condition when
+forking and renaming repositories, and in at least one example we
+believe this may have crashed some front-end servers that provide
+GitHub's web-UI with a Query of Death style outage.  GitHub has chosen
+not to confirm or deny this, but an outage starting exactly coincident
+with a repo rename and re-fork is very suspicious.
+
+Enough about GitHub, lets talk now about an organization that
+absolutely has experience dealing with large FOSS projects.
+
+### IRC and freenode
+
+The staff of freenode are amazing, besides handling trolls,
+maintaining the network, and hosting freenode Live, the staff are
+incredibly helpful.  Within a few hours of us contacting them and
+explaining the situation, we'd been added with appropriate access to
+manage our channels.  This was great, as it allowed us to post some
+good news within a few hours of publicly disclosing the problems we
+were facing.
+
+## The Future
+
+So how do we prevent this from happening again?  Well like any outage
+of service, the first part of answering this question is to examine
+exactly what went wrong in this instance.
+
+The first thing that went wrong was a single point of failure.  These
+are very bad in any system, but especially bad where globally
+distributed infrastructure is concerned.  In this case our single
+point was Xtraeme, with his exclusive administrative access to many
+resources.
+
+We've made sure we don't have any more single points of failure, or at
+least as few as is reasonably practical.  We have multiple people in
+GitHub as owners, we have multiple channel masters on IRC, and we have
+multiple owners on our Google Cloud account.
+
+We've also eliminated the single point of management failure, our
+defined processes and decision making processes now happen more
+accessibly in IRC and policies and procedures are now posted to
+various parts of our website.  This has led to us making sure we won't
+have exactly the same problem again.
+
+## But Wait! Why isn't there a Void Foundation?
+
+Ah yes, this is the question that is still very sticky and comes up
+from time to time.  Usually this question comes up in the form of "I
+like Void, I want to send you money, why won't you take my money!?"
+For a FOSS project to not take donations is indeed a bit strange, and
+in our case it all comes down to legal standing.  Well that and that
+we're fairly well funded already.
+
+Accepting money in the form of a donation means first and foremost
+being able to show where that money went.  Any developed government in
+the world will want to know where the money goes if its being classed
+as a donation.  Void makes most sense to be a non-profit organization,
+since we don't do this for money.  Now the question comes in the
+sticky bit of legal systems: where is Void?
+
+For a project that lives on the internet, this is a bit of an odd
+question to ask, but its a very important one.  Where Void actually
+exists determines what government needs to recognize it as a
+non-profit organization.  We have developers that hold citizenship in
+the US, UK, Germany, Spain, Brazil, and a handful of other places
+scattered around the globe.
+
+Any one of us could in theory do the paperwork and setup the legal
+entity in our respective countries, but doing so means that then we're
+part of the organization that runs the non-profit.  This is work we
+didn't sign on for as developers, and work we aren't qualified to do.
+
+The obvious answer is to reach out to a firm that specializes in doing
+this for Open Source projects, and having done this, we're still not
+at the point of having an organization with legal standing.  Even once
+we have an organization with such standing, we'll then need to
+transfer ownership of machines to the organization and notify our
+various providers around the world of this change, its not an easy
+project.
+
+## Where are we now?
+
+Void is stable, its been around for 9 years already, and it will
+continue to be around because the maintainers enjoy working on it.
+We've taken steps to ensure that the same loss of continuity doesn't
+happen again, and we've ensured that our processes are documented,
+repeatable, and agreed upon.
+
+---
+
+If you liked this article and want to learn more, the best way is to
+become involved with the Void Project and help us keep going for
+another 9 years.
+
+Feel free to reach out to the author on freenode, `maldridge` idles in
+`#voidlinux`.
