@@ -42,21 +42,21 @@ Lets take a quick detour into 2 other projects and see how they're
 managed, then compare this to Void.  We'll look at Debian and Gitea.
 
 Debian is legendary in its complexity of organizational progress.
-Between Debian Maintainer, Debian Developers, Sponsors, members of the
-General Assembly, Technical Committee, and the foundation, Debian has
-perhaps more bureaucratic machinery than some US states and perhaps
-even some European nations.  All of this managerial infrastructure and
-distribution means that its virtually impossible for Debian to ever
-suffer a discontinuity in leadership, since someone will always be
-available.  Unfortunately, it also means that like state governments
-and most members of the EU, its very difficult to get anything done
-quickly.  Worse, the complexity can lead to distrust in the leadership
-when things happen in uncommon ways or the system appears to not honor
-a majority will, such as the trouble around the switch to systemd and
-the struggle for decision making power between the technical committee
-and the general assembly.  Debian's managerial machinery is also not
-cheap, there are entire sub teams dedicated to managing the
-infrastructure surrounding these human processes and the
+Between Debian Maintainers, Debian Developers, Sponsors, members of
+the General Assembly, Technical Committee, and the foundation, Debian
+has perhaps more bureaucratic machinery than some US states and
+perhaps even some European nations.  All of this managerial
+infrastructure and distribution means that its virtually impossible
+for Debian to ever suffer a discontinuity in leadership, since someone
+will always be available.  Unfortunately, it also means that like
+state governments and most members of the EU, its very difficult to
+get anything done quickly.  Worse, the complexity can lead to distrust
+in the leadership when things happen in uncommon ways or the system
+appears to not honor a majority will, such as the trouble around the
+switch to systemd and the struggle for decision making power between
+the technical committee and the general assembly.  Debian's managerial
+machinery is also not cheap, there are entire sub teams dedicated to
+managing the infrastructure surrounding these human processes and the
 infrastructure is in many cases substantial.
 
 At the other end of the scale is perhaps a project like Gitea, which
@@ -107,12 +107,13 @@ these things, the third is perhaps the most frustrating to the Void
 team, as its not a goal of the project.
 
 This popularity continued for a while and processes started to become
-strained.  Two Void maintainers burned out and left the project, at
-the same time, a German Linux magazine wanted to do a rather length
+strained.  Two Void maintainers burned out and left the project.  At
+the same time, a German Linux magazine wanted to do a rather lengthy
 article on Void.  To ensure the best article possible for them, we
 really wanted to spin new ISO images that they could test with all the
 latest and greatest software.  At this point the previous image set
-was well over a year old.
+was well over a year old and without Xtraeme's signing keys, new ISOs
+would need to break trust from the old ones.
 
 ## What Happens Now?
 
@@ -132,11 +133,13 @@ usual when Xtraeme returned, and we believed he would return.  It was
 a baffling concept to us that he would leave the project.  We believed
 it was in everyone's best interests to not discuss things publicly
 until we knew facts that could be presented, rather than piecemeal
-guesses at what was happening.
+guesses at what was happening.  After all, Void has always been about
+software and just software; what goes on in maintainer's personal
+lives is not relevant to the project.
 
 ### The Power Struggle
 
-Internally, there wasn't a power struggle, there was a struggle from
+Internally, there wasn't a power struggle, there was a struggle *from*
 power.  We had previously enjoyed that our own spheres of influence
 were fairly limited, and that there wasn't a need to make large policy
 decisions on a day to day basis.  Unfortunately without a BDFL, we now
@@ -180,20 +183,22 @@ do this?
 For many of the maintainers, we considered this to be the right thing
 to do.  As far as we were concerned, there were end users who had
 installed Void on computers with the expectation that it would work
-and function as advertised, and that it would continue to do so.
+and function as advertised, and that it would continue to do so for
+the foreseeable future.
 
 This led to a series of internal arguments over whether or not this
 was the right thing to do, or if it was even legal.  We concluded that
 this was another argument that we'd have if it ever actually became a
 problem, and one developer decided to take leave of the project due to
-insolvable differences of opinion in this area.
+unsolvable differences of opinion in this area.
 
-We procured the resources to, and maintain the capability to fork if
-necessary, brand and completely shut off Void.  Since the software
-is Open Source and freely licensed, a name change would be about the
-worst that would happen, but the ideals of Void would live on and
-systems could be transparently migrated to a new name and new
-repositories.  Fortunately it hasn't come to this yet.
+One solution which was available was to fork the project.  We made
+plans for this, obtained appropriate resources, and maintain this
+capability today.  Since the software is Open Source and freely
+licensed, a name change would be about the worst that would happen,
+but the ideals of Void would live on and systems could be
+transparently migrated to a new name and new repositories.
+Fortunately it hasn't come to this yet.
 
 ## Taking Control
 
@@ -209,12 +214,12 @@ Once of the easiest resources we tried to track down was the domain
 name, but not `voidlinux.eu`.  While this is the address the project
 launched under, its more traditional for projects to reside under a
 `.org` address, and we really wanted to be under `voidlinux.org`.
-Fortunately someone had bought this name and new of the project, and
-had just been waiting for a contact to arrange the transfer.  We
+Fortunately someone had bought this name and knew of the project.
+They'd just been waiting for a contact to arrange the transfer.  We
 explained what was going on, and asked them to keep this matter quiet
 until we could do a coordinated release of information, as we weren't
 even sure it was possible to regain operational control of the
-project.
+project yet.
 
 ### Systems, Servers, and Mirrors
 
@@ -234,7 +239,8 @@ only due to a failed disk.
 Easily the worst part of gaining control of the project was the Git
 repositories.  Void, like many other open source projects hosts code
 on GitHub as its a convenient platform which most people have an
-account on already.  Incidentally its perhaps one of the least
+account on already (unlike alioth, launchpad, or others that have come
+and gone in this space...).  Incidentally its perhaps one of the least
 friendly platforms to massive projects in terms of tooling, but there
 really aren't a lot of good options available for very large projects
 short of tools like Gerrit.
@@ -269,20 +275,22 @@ Engine with full VMs (incidentally this is why CI runs take so long,
 cores have to become available in a Google cloud cluster before the CI
 job can schedule).  Void's workloads can't be containerized easily as
 that encounters the container-in-containers problem, which is still
-not solved in a way that doesn't introduce security concerns.
+not solved in a way that doesn't introduce security concerns (look at
+the security implications of docker-in-docker to get a feel for the
+kinds of problems in this space).
 
 So we were stuck with GitHub and no way to get control of our
-organization.  As we later would discover, they wanted to see some
+organization.  As we later would discover GitHub wanted to see some
 documentation from a legal entity that this transfer needed to happen,
 i.e. some reason that Xtraeme wouldn't be coming back.  Its left as an
-excessive to the reader for how this would have worked out to get a
+excercise to the reader for how this would have worked out to get a
 Spanish legal entity to confirm to a San Francisco company the status
 of an EU citizen while the San Francisco company was being acquired by
-a Delaware cooperation that's been sued a few times by the EU.
+a Delaware corporation that's been sued a few times by the EU.
 
 We made the difficult choice to create a new organization with a dash
 between "Void" and "Linux" and pushed new copies of our repositories
-here.
+there.
 
 This is when we discovered the second problem in GitHub's
 infrastructure.  There is no way to update the fork graph or to send a
@@ -291,7 +299,7 @@ a fork of every repository you might wish to send a patch to, and
 meant that for Void maintainers we all needed to archive and re-fork
 our repositories.  Again the author believes this kind of obvious
 technical limitation to be evidence of GitHub's lack of plan around
-hosting FOSS projects.
+seriously hosting FOSS projects.
 
 This led to some interesting problems.  The void-packages repository
 is massive.  Its not quite Linux Kernel massive, but its not the kind
@@ -339,7 +347,9 @@ We've also eliminated the single point of management failure, our
 defined processes and decision making processes now happen more
 accessibly in IRC and policies and procedures are now posted to
 various parts of our website.  This has led to us making sure we won't
-have exactly the same problem again.
+have exactly the same problem again.  We still effectively have a
+project head in terms of package management, but the line has to be
+drawn somewhere in subdividing decision making powers.
 
 ## But Wait! Why isn't there a Void Foundation?
 
@@ -375,7 +385,8 @@ at the point of having an organization with legal standing.  Even once
 we have an organization with such standing, we'll then need to
 transfer ownership of machines to the organization and notify our
 various providers around the world of this change, its not an easy
-project.
+project.  It also would fundamentally change the culture of the
+project, and this isn't something we're willing to do.
 
 ## Where are we now?
 
