@@ -47,6 +47,7 @@ h4 {
 
 ul {
     list-style: disc inside;
+    margin-bottom: 1em;
 }
 
 blockquote {
