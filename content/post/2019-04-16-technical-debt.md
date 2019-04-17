@@ -85,7 +85,13 @@ explaining to them that what you've built isn't actually a sustainable
 solution and will need to be rebuilt.  This discussion is one that as
 an engineer you will almost always lose.  People look at it and say
 that it clearly works, so they won't pay for engineering time to
-rebuild it just because you think it needs to be rebuilt.
+rebuild it just because you think it needs to be rebuilt.  If you find
+yourself in this situation, its time to reevaluate the culture of your
+organization.  An organization that accepts and encourages things to
+be done quickly instead of done right is one that has suffered a
+systemic breakdown of engineering integrity.  With concerted effort
+this can be reversed, but if left unchecked it is almost always
+fatal to the engineering team, and often the company as well.
 
 Technical debt, like real debt, can also be thought of to have an
 interest payment.  This is roughly how much you pay to just keep your
@@ -94,7 +100,7 @@ like a module that is implemented poorly, this is pretty safe low
 interest debt.  For things like a demo that was just barely good
 enough to stumble over the bar into production, this can be extremely
 high interest in the long term, and for things like being on a
-framework that is dead, the interest can be apocalyptic high.
+framework that is dead, the interest can be apocalypticly high.
 
 So how do you get out from under a student loan sized technical debt?
 Its a hard and unpopular road, and its a road that the business has to
@@ -113,9 +119,13 @@ The next and hardest part is specifying what the different parts of
 your application actually do.  This part is critical to bee able to
 rewrite things without breaking thought-to-be-unrelated components.
 You need to state in plain terms what various parts of your
-application do, and what the promises are made by your interfaces.  If
-you can do this, you're well on your way to being able to recover from
-your loan shark of a code repo.
+application do, and what the promises are made by your interfaces.
+You also need to write an obscene number of tests that validate all
+behavior of your interfaces, both specified and unspecified.  If your
+organization has let things get this far, you're relying on
+undocumented and unspecified behavior and it will absolutely bite you.
+If you can do this, you're well on your way to being able to recover
+from your loan shark of a code repo.
 
 Just making one time lump payments to your debt isn't enough though.
 You have to constantly keep on top of your technical credit score and
@@ -124,6 +134,14 @@ best organizations, this will manifest as some percentage of every
 development cycle dedicated to maintenance, and a larger all-hands
 cleanup roughly every quarter.  In lesser organizations, this will be
 just one or two engineers fighting for cleanup, if any.
+
+Its also good to keep an eye out for "shadow maintainers" at the end.
+These are the people who have the drive to try and keep your codebase
+and systems in a more sane state even when it means doing so without
+approval from a project manager or for a cost center for that
+engineering time.  These people are an amazing asset, even more so if
+they are interested in fixing the infrastructure that your stack runs
+on.  Find these people and funnel resources to them.
 
 No matter what you do, remember to code responsibly and not leave a
 disaster zone in your wake.
