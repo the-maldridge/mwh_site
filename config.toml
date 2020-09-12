@@ -1,4 +1,4 @@
-baseURL = "http://michaelwashere.net"
+baseURL = "https://www.michaelwashere.net"
 languageCode = "en-us"
 title = "Michael Was Here"
 paginate = 5
