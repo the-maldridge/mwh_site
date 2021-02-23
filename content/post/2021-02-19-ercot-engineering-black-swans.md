@@ -142,7 +142,7 @@ refer to as instantaneous real-time.  Electrical power at grid scale
 can't be practically stored in a meaningfully dense way yet.  There
 are so-called "surge" plants like the [Cruachan Power
 Station](https://en.wikipedia.org/wiki/Cruachan_Power_Station) in
-Scottland, but these plants are designed for peak loads.  Peak loads
+Scotland, but these plants are designed for peak loads.  Peak loads
 are massive surges of power demand that happen, for example, when
 large fractions of the UK [fancy a cup of tea during a
 commercial](https://en.wikipedia.org/wiki/TV_pickup).  There are some
