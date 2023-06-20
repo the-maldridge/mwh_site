@@ -1,10 +1,9 @@
 {{ define "main" }}
-{{ $paginator := .Paginate (where .Data.Pages "Section" "!=" "") }}
-{{ range $paginator.Pages }}
+{{ range .Paginator.Pages }}
 <div class="postBox">
-    <a href="{{ .URL }}" class="postLink"><h2>{{ .Title }}</h2></a>
+    <a href="{{ .Permalink }}" class="postLink"><h2>{{ .Title }}</h2></a>
     <p>{{ .Summary }}</p>
-    {{ if .Truncated }}<a href="{{ .URL }}" class="postLink"><h4>Read More...</h4></a>{{ end }}
+    {{ if .Truncated }}<a href="{{ .Permalink }}" class="postLink"><h4>Read More...</h4></a>{{ end }}
 </div>
 {{ end }}
 {{ template "_internal/pagination.html" . }}
