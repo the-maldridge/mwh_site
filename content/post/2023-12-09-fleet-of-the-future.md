@@ -52,7 +52,7 @@ system that people care about if it goes down.  Since developers are
 customers of infrastructure, all staging environments are production
 *to them* since an outage of a staging cluster will cost productivity,
 slow down releases, and potentially jeopardize a production release if
-testing can't be performed in a timely manner.  Operations may chose
+testing can't be performed in a timely manner.  Operations may choose
 to have its own staging or testing systems to play with, but the
 clusters that are maintained for use by internal customers in the
 company are for all intents and purposes production clusters, just not
