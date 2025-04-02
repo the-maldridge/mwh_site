@@ -70,13 +70,13 @@ blockquote {
 
 code {
     font-family: monospace;
-    background: #000000;
+    background-color: #000000 !important;
     padding: 0.25em;
 }
 
 pre code {
     font-family: monospace;
-    background: #000000;
+    background-color: #000000;
     padding: 0;
 }
 
