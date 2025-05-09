@@ -50,6 +50,16 @@ ul {
     margin-bottom: 1em;
 }
 
+ol {
+    list-style: arabic outside;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
 blockquote {
     color: #828282;
     border-left: 2px solid #e8e8e8;
