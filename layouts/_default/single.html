@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="postBox">
     <header class="contentMeta">
-        <h1>{{ .Title }}</h1>
+        <h1>{{ .Title | safeHTML }}</h1>
         {{ if .Params.Date }}<h3>{{ .Date.Format "January 2, 2006" }}</h3>{{ end }}
     </header>
     <article>
